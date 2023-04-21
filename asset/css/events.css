@@ -1,0 +1,217 @@
+:root {
+  --blackColor: #4F4343;
+  --blueBG: #6D9BD8;
+  --darkBlueBG: #4c76ac;
+  --blueFont: #4285F4;
+  --grey: #808080;
+  --transition1s: all 0.1s ease;
+  --transition2s: all 0.2s ease;
+  --transition3s: all 0.3s ease;
+  --transition4s: all 0.4s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Product Sans", sans-serif;
+}
+
+.btn-blue {
+  background-color: var(--blueBG);
+  color: #fff;
+  -webkit-transition: var(--transition3s);
+  transition: var(--transition3s);
+}
+
+.btn-blue:hover {
+  background-color: var(--darkBlueBG);
+  color: #fff;
+}
+
+.btn-outline-blue {
+  border: 2px solid var(--blueBG);
+  color: var(--blueFont);
+  -webkit-transition: var(--transition3s);
+  transition: var(--transition3s);
+}
+
+.btn-outline-blue:hover {
+  background-color: var(--blueBG);
+  color: #fff;
+}
+
+.text-own-black {
+  color: var(--blackColor) !important;
+}
+
+.text-own-black.active {
+  color: var(--blueFont) !important;
+}
+
+.text-grey {
+  color: var(--grey) !important;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 5%;
+}
+
+.bg-gradient {
+  background-image: url(../img/gradient_bg.png) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.divider {
+  background: -webkit-gradient(linear, left top, right top, from(rgb(233, 66, 58)), color-stop(rgb(66, 133, 244)), color-stop(rgb(248, 188, 2)), to(rgb(7, 157, 86)));
+  background: linear-gradient(to right, rgb(233, 66, 58), rgb(66, 133, 244), rgb(248, 188, 2), rgb(7, 157, 86));
+}
+
+.instagram-color {
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), -webkit-gradient(linear, left top, left bottom, from(#6559ca), color-stop(30%, #bc318f), color-stop(50%, #e33f5f), color-stop(70%, #f77638), to(#fec66d));
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar {
+  z-index: 2;
+}
+.navbar #gdsc-logo {
+  width: 55px;
+}
+
+#upcoming-events:before {
+  content: "";
+  width: 100%;
+  height: 64.49px;
+  display: block;
+}
+#upcoming-events .event .row {
+  padding: 80px 0;
+}
+#upcoming-events .event .row .event-img img {
+  border: 5px solid #FFFFFF;
+  -webkit-box-shadow: 6px 6px 10px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 6px 6px 10px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  width: 100%;
+}
+#upcoming-events .event .row .event-info .event-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+}
+#upcoming-events .event .row .event-info .event-details {
+  font-size: 20px;
+}
+#upcoming-events .event .row .event-info .event-w {
+  font-size: 20px;
+}
+#upcoming-events .event .row .event-info .event-w ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+#upcoming-events .event .row .event-info .event-w ul li .rounded-circle {
+  width: 20px;
+  height: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+#upcoming-events .event .row .event-info .event-w ul li:first-child .rounded-circle {
+  background-color: #FAB017;
+}
+#upcoming-events .event .row .event-info .event-w ul li:nth-child(2) .rounded-circle {
+  background-color: #4285F4;
+}
+#upcoming-events .event .row .event-info .event-w ul li:last-child .rounded-circle {
+  background-color: #E9423A;
+}
+
+#prev-events .events {
+  grid-column-gap: 25px;
+  grid-row-gap: 40px;
+}
+#prev-events .events .event {
+  background: -webkit-gradient(linear, left top, right top, from(rgb(233, 66, 58)), color-stop(rgb(66, 133, 244)), color-stop(rgb(248, 188, 2)), to(rgb(7, 157, 86)));
+  background: linear-gradient(to right, rgb(233, 66, 58), rgb(66, 133, 244), rgb(248, 188, 2), rgb(7, 157, 86));
+  padding: 3px !important;
+  border-radius: 15px;
+  -webkit-transition: var(--transition3s);
+  transition: var(--transition3s);
+}
+#prev-events .events .event:hover {
+  -webkit-box-shadow: 6px 6px 8px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 6px 6px 8px 2px rgba(0, 0, 0, 0.25);
+}
+#prev-events .events .event .event-wrapper {
+  border-radius: 15px;
+  overflow: hidden;
+}
+#prev-events .events .event .event-wrapper .event-img {
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+  position: relative;
+}
+#prev-events .events .event .event-wrapper .event-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#prev-events .events .event .event-wrapper .event-info {
+  background-color: #fff;
+  overflow: hidden;
+  padding: 5px 10px;
+}
+#prev-events .events .event .event-wrapper .event-info .event-title {
+  font-size: 24px;
+}
+#prev-events .events .event .event-wrapper .event-info .event-details {
+  font-size: 18px;
+}
+
+#filler {
+  font-size: 24px;
+}
+
+#contacts .contact-img img {
+  width: 80%;
+  border-radius: 15px;
+}
+#contacts .form .form-title {
+  font-size: 28px;
+}
+#contacts .form form #message {
+  resize: none;
+  height: 300px;
+}
+
+footer .container .row .logo-container #gdsc-with-text {
+  max-width: 350px !important;
+}
+
+@media (max-width: 992px) {
+  #upcoming-events .event .row .event-info .event-details {
+    text-align: justify;
+  }
+}
+@media (max-width: 768px) {
+  #prev-events .events {
+    grid-row-gap: 20px;
+  }
+}

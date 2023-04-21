@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDSC | Events</title>
+
+    <!-- BOOTSTRAP 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- PRODUCT SANS -->
+    <link href="https://fonts.cdnfonts.com/css/product-sans" rel="stylesheet">
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./asset/css/events.css">
+    <link rel="icon" href="./asset/img/gdsc_pupstb.png" >
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 start-0 end-0">
+        <div class="container-lg py-1">
+            <!-- gdsc logo -->
+            <a class="navbar-brand" href="#">
+                <img src="./asset/img/gdsc_logo.png" id="gdsc-logo" />
+            </a>
+
+            <!-- hamburger -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- buttons/links -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
+                    <li class="nav-item me-4">
+                        <a class="nav-link text-own-black" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link text-own-black" href="#">About</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link text-own-black active" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-blue join-gdsc rounded-pill px-4">Join GDSC</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- UPCOMING EVENTS -->
+    <section id="upcoming-events">
+        <div class="section-title text-center py-4 text-own-black">Upcoming Events</div>
+        <div class="event bg-gradient">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <!-- event image -->
+                    <div class="col-12 col-lg-4 event-img me-0 me-lg-3 mb-4 mb-lg-0">
+                        <image src="./asset/img/upcoming_events/luminous_infosession.jpg" alt="event-image" />
+                    </div>
+
+                    <!-- event information -->
+                    <div class="col-12 col-lg-7 event-info text-white">
+                        <div class="event-title text-uppercase mb-3 text-center text-lg-start">
+                            Luminous Info Session '22:<br />Launching the GDSC PUPSTB's TechStars
+                        </div>
+                        <div class="event-details mb-3 text-lg-start">
+                            The Luminous Info Session '22 will tell you all you need to know about the GDSC this
+                            upcoming year at the Google Developer Student Club PUP Sto Tomas Branch chapter. We'll go
+                            over our plans and goals, and have some key speakers talk about their own experiences and
+                            insights into the chapters, as well as host a question and answer period for you all.
+                        </div>
+                        <div class="event-w">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="rounded-circle me-2"></div>Where: Polytechnic University of the
+                                    Philippines - Sto. Tomas Branch
+                                </li>
+                                <li>
+                                    <div class="rounded-circle me-2"></div>When: September 28, 2022
+                                </li>
+                                <li>
+                                    <div class="rounded-circle me-2"></div>Who: GDSC PUPSTB Core Team Members only
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREVIOUS EVENTS -->
+    <section id="prev-events" class="py-5">
+        <div class="container px-4">
+            <div class="section-title text-center text-own-black">Previous Events</div>
+            <div class="events row justify-content-center mt-5">
+
+                <!-- event 1 -->
+                <div class="col-md-5 col-lg-3 event p-0">
+                    <div class="bg-white h-100 event-wrapper">
+                        <div class="event-img">
+                            <img src="./asset/img/prev_events/onboarding.jpg" class="w-100" />
+                        </div>
+                        <div class="event-info py-3">
+                            <div class="event-title fw-bold mb-2">
+                                Onboarding Session '22
+                            </div>
+                            <div class="event-details">
+                                The very first face-to-face event held by GDSC PUPSTB that was meant as a welcoming and
+                                get-to-know party for the new and previous members of GDSC PUPSTB.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- event 2 -->
+                <div class="col-md-5 col-lg-3 event p-0">
+                    <div class="bg-white h-100 event-wrapper">
+                        <div class="event-img">
+                            <img src="./asset/img/prev_events/put we before me.png" class="w-100" />
+                        </div>
+                        <div class="event-info py-3">
+                            <div class="event-title fw-bold mb-2">
+                                Put We Before Me
+                            </div>
+                            <div class="event-details">
+                                Celebration party for the year's success of the GDSC PUP-STB.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- event 3 -->
+                <div class="col-md-5 col-lg-3 event p-0">
+                    <div class="bg-white h-100 event-wrapper">
+                        <div class="event-img">
+                            <img src="./asset/img/prev_events/flutter.jpg" class="w-100" />
+                        </div>
+                        <div class="event-info py-3">
+                            <div class="event-title fw-bold mb-2">
+                                Funky Flutter PH Fest
+                            </div>
+                            <div class="event-details">
+                                At three-day event held by 10 PH leads and community, promoting google technologies
+                                specifically
+                                Flutter, Firebase, and Google Cloud.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- event 4 -->
+                <div class="col-md-5 col-lg-3 event p-0">
+                    <div class="bg-white h-100 event-wrapper">
+                        <div class="event-img">
+                            <img src="./asset/img/prev_events/solution challenge.jpg" class="w-100" />
+                        </div>
+                        <div class="event-info py-3">
+                            <div class="event-title fw-bold mb-2">
+                                Solution Challenge '22
+                            </div>
+                            <div class="event-details">
+                                The mission of the 2022 Solution Challenge is to solve for one or more of the United
+                                Nations 17
+                                Sustainable Development Goals using Google technology.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- event 5 -->
+                <div class="col-md-5 col-lg-3 event p-0">
+                    <div class="bg-white h-100 event-wrapper">
+                        <div class="event-img">
+                            <img src="./asset/img/prev_events/into to webdev.png" class="w-100" />
+                        </div>
+                        <div class="event-info py-3">
+                            <div class="event-title fw-bold mb-2">
+                                Hello World: Intro to WebDev
+                            </div>
+                            <div class="event-details">
+                                Tackles UI/UX as the driver of Web Development and helps the attendees to know how to
+                                design a
+                                website, and create a responsive model for creating own personal or business websites.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- event 6 -->
+                <div class="col-md-5 col-lg-3 event p-0">
+                    <div class="bg-white h-100 event-wrapper">
+                        <div class="event-img">
+                            <img src="./asset/img/prev_events/infosession.jpg" class="w-100" />
+                        </div>
+                        <div class="event-info py-3">
+                            <div class="event-title fw-bold mb-2">
+                                Onboarding Session '21
+                            </div>
+                            <div class="event-details">
+                                Connect with GDSC PUP-STB's core team and learn about the upcoming activities for the
+                                year..
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- filler -->
+    <section id="filler" class="bg-gradient text-white text-center py-5 px-2">
+        Bridging the gap between theory and practice
+    </section>
+
+    <section id="contacts" class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- image -->
+                <div class="col-lg-5 contact-img mb-4 m-lg-0 d-flex justify-content-center align-items-center">
+                    <img src="./asset/img/pixel.png" />
+                </div>
+
+                <!-- form -->
+                <div class="col-lg-7 form text-own-black">
+                    <div class="form-title mb-3 fw-bolder text-center text-lg-start">
+                        Let's collaborate!
+                    </div>
+                    <form>
+                        <input type="email" id="email" class="form-control mb-3" placeholder="Email" required>
+                        <input type="text" id="subject" class="form-control mb-3" placeholder="Subject" required>
+                        <textarea id="message" class="form-control mb-4" placeholder="Message" required></textarea>
+                        <div class="text-end">
+                            <input type="submit" value="Send" class="btn btn-outline-blue rounded-pill px-5">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- divider -->
+    <div class="divider py-2"></div>
+
+    <!-- footer -->
+    <footer class="py-5">
+        <div class="container px-4">
+            <div class="row text-center text-lg-start">
+                <!-- gdsc logo -->
+                <div class="col-lg-7 mb-4 mb-lg-0 logo-container">
+                    <img src="./asset/img/gdsc_with_text.png" alt="gdsc-with-text" class="w-75 w-lg-50" id="gdsc-with-text" />
+                </div>
+
+                <!-- contacts -->
+                <div class="col-lg-5 text-own-black">
+                    <div class="row">
+                        <!-- email -->
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="contact-title fw-bolder mb-2">
+                                Contact Us
+                            </div>
+                            <div class="contact-email">
+                                gdscpupstb@gmail.com
+                            </div>
+                        </div>
+                        <!-- socmeds -->
+                        <div class="col-lg-6">
+                            <div class="contact-title fw-bolder mb-2">
+                                Socials
+                            </div>
+                            <div class="socmed-icons lead">
+                                <!-- facebook -->
+                                <a href="https://www.facebook.com/gdscpupstb" class="text-decoration-none me-2" target="_blank">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <!-- twitter -->
+                                <a href="https://twitter.com/gdscpupstb" class="text-decoration-none me-2" target="_blank">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <!-- instagram -->
+                                <a href="https://www.instagram.com/gdscpupstb" class="text-decoration-none me-2 instagram-color" target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <!-- youtube -->
+                                <a href="https://www.youtube.com/@googledeveloperstudentclub5877" class="text-decoration-none text-danger" target="_blank">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- copyright -->
+            <div class="coyright text-grey text-center mt-4 pt-3 pt-lg-5 px-4">
+                Google Developer Student Clubs - PUP Sto. Tomas ⓒ All Rights Reserved 2022
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
