@@ -1,0 +1,48 @@
+:root {
+  --blackColor: #4F4343;
+  --blueBG: #6D9BD8;
+  --darkBlueBG: #4c76ac;
+  --blueFont: #4285F4;
+  --grey: #808080;
+
+  // transitions
+  --transition1s: all 0.1s ease;
+  --transition2s: all 0.2s ease;
+  --transition3s: all 0.3s ease;
+  --transition4s: all 0.4s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Product Sans', sans-serif;
+}
+
+// STYLES FOR LANDING PAGE
+.navbar {
+  z-index: 2;
+
+  #gdsc-logo {
+      width: 55px;
+      font-weight:600
+  }
+}
+
+
+
+
+
+
+
+
+footer {
+  .container {
+      .row {
+          .logo-container {
+              #gdsc-with-text {
+                  max-width: 350px !important;
+              }
+          }
+      }
+  }
+}
