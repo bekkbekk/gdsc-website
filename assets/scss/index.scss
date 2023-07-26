@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Product Sans', sans-serif;
+}
+
+
+#mainNav {
+    #gdscLogo {
+        width: 60px;
+    }
+    #navcol-1{
+        justify-content: end;
+    }
+}
+
+#section1 {
+    .caption-1 {
+        text-align: start;
+        color: #4F4343;
+        font-family: Product Sans;
+        font-size: 3.5em;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .orgNameGradient {
+        background: linear-gradient(90deg, #E9423A 0%, #4285F4 35.18%, #FAB017 69.56%, #079D56 100%);
+        background-clip: text;
+        font-family: Product Sans;
+        font-size: 4em;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+#section2 {
+    .title1 {
+        background: linear-gradient(90deg, #E9423A 0%, #4285F4 34.14%, #FAB017 66.95%, #079D56 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Product Sans;
+        font-size: 2.5em;
+        font-style: normal;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 321px){
+    .caption-1 {
+        font-size: 2.15em !important;
+        width: fit-content;
+    }
+    
+    #captionDiv{
+        width: fit-content;
+    }
+    
+    .orgNameGradient{
+        font-size: 2.3em !important;
+        width: fit-content;
+    }
+    
+    #sec2Title{
+        font-size: 1.25em !important;
+    }
+    
+    .desc {
+        font-size: 1em !important
+    }
+}
+
+@media screen and (min-width: 565px){
+    #helper{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 577px){
+    .orgNameGradient{
+        font-size: 3.75em !important;
+    }
+}
+
+@media (max-width: 768px){
+    #slogan {
+        font-size: 0.6em
+    }
+    #execPic{
+        width: 100%;
+        height: auto;
+    }
+    .title1 {
+        font-size: 1.8em !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .caption-1 {
+        font-size: 3em !important;
+        width: fit-content;
+    }
+    
+    .orgNameGradient{
+        font-size: 3.5em !important;
+        width: fit-content;
+    }
+}
