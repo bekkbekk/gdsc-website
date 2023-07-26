@@ -1,0 +1,295 @@
+:root {
+    --blackColor: #4F4343;
+    --blueBG: #6D9BD8;
+    --darkBlueBG: #4c76ac;
+    --blueFont: #4285F4;
+    --grey: #808080;
+
+    // transitions
+    --transition1s: all 0.1s ease;
+    --transition2s: all 0.2s ease;
+    --transition3s: all 0.3s ease;
+    --transition4s: all 0.4s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Product Sans', sans-serif;
+}
+
+// ------------- own class styles -------------
+.btn-blue {
+    background-color: var(--blueBG);
+    color: #fff;
+
+    transition: var(--transition3s);
+}
+
+.btn-blue:hover {
+    background-color: var(--darkBlueBG);
+    color: #fff;
+}
+
+.btn-outline-blue {
+    border: 2px solid var(--blueBG);
+    color: var(--blueFont);
+
+    transition: var(--transition3s);
+}
+
+.btn-outline-blue:hover {
+    background-color: var(--blueBG);
+    color: #fff;
+}
+
+.text-own-black {
+    color: var(--blackColor) !important;
+}
+
+.text-own-black.active {
+    color: var(--blueFont) !important;
+}
+
+.text-grey {
+    color: var(--grey) !important;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 5%;
+}
+
+.bg-gradient {
+    // TODO: dapat gawing 4 colors. di ko pa lang alam kung pano hehe
+    // background: radial-gradient(94.24% 98.87% at 82.27% 43.75%, #2376E3 0%, #FAB017 100%) !important;
+    background-image: url(../img/gradient_bg.png) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+
+.divider {
+    background: linear-gradient(to right, rgba(233, 66, 58, 1),
+            rgba(66, 133, 244, 1),
+            rgba(248, 188, 2, 1),
+            rgba(7, 157, 86, 1));
+}
+
+.instagram-color {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+// -------------------------------------------
+
+.navbar {
+    z-index: 2;
+
+    #gdsc-logo {
+        width: 55px;
+    }
+}
+
+#upcoming-events {
+    &:before {
+        content: '';
+        width: 100%;
+        height: 64.49px; // height ng navbar
+        display: block;
+    }
+
+    .event {
+        .row {
+            padding: 80px 0;
+
+            .event-img {
+                img {
+                    border: 5px solid #FFFFFF;
+                    box-shadow: 6px 6px 10px 2px rgba(0, 0, 0, 0.15);
+                    border-radius: 15px;
+                    width: 100%;
+                }
+            }
+
+            .event-info {
+                .event-title {
+                    font-size: 36px;
+                    font-weight: 700;
+                    line-height: 46px;
+                }
+
+                .event-details {
+                    font-size: 20px;
+                }
+
+                .event-w {
+                    font-size: 20px;
+
+                    ul {
+                        li {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 15px;
+
+                            .rounded-circle {
+                                width: 20px;
+                                height: 20px;
+                                flex-shrink: 0;
+                            }
+
+                            &:first-child .rounded-circle {
+                                background-color: #FAB017;
+                            }
+
+                            &:nth-child(2) .rounded-circle {
+                                background-color: #4285F4;
+                            }
+
+                            &:last-child .rounded-circle {
+                                background-color: #E9423A;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#prev-events {
+    .events {
+        grid-column-gap: 25px;
+        grid-row-gap: 40px;
+
+        .event {
+            background: linear-gradient(to right, rgba(233, 66, 58, 1),
+                    rgba(66, 133, 244, 1),
+                    rgba(248, 188, 2, 1),
+                    rgba(7, 157, 86, 1));
+            padding: 3px !important;
+            border-radius: 15px;
+            transition: var(--transition3s);
+
+            &:hover {
+                box-shadow: 6px 6px 8px 2px rgba(0, 0, 0, 0.25);
+            }
+
+            .event-wrapper {
+                border-radius: 15px;
+                overflow: hidden;
+
+                .event-img {
+                    // border-top-left-radius: 15px;
+                    // border-top-right-radius: 15px;
+                    // object-fit: cover;
+                    overflow: hidden;
+
+                    width: 100%;
+                    height: 0;
+                    padding-bottom: 75%;
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                    }
+                }
+
+                .event-info {
+                    background-color: #fff;
+                    // border-bottom-left-radius: 15px;
+                    // border-bottom-right-radius: 15px;
+                    overflow: hidden;
+                    padding: 5px 10px;
+
+                    .event-title {
+                        font-size: 24px;
+                    }
+
+                    .event-details {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#filler {
+    font-size: 24px;
+}
+
+#contacts {
+    .contact-img {
+        img {
+            width: 80%;
+            border-radius: 15px;
+        }
+    }
+
+    .form {
+        .form-title {
+            font-size: 28px;
+        }
+
+        form {
+            #message {
+                resize: none;
+                height: 300px;
+            }
+        }
+    }
+}
+
+footer {
+    .container {
+        .row {
+            .logo-container {
+                #gdsc-with-text {
+                    max-width: 350px !important;
+                }
+            }
+        }
+    }
+}
+
+// up to large screens
+@media (max-width: 992px) {
+    #upcoming-events {
+        .event {
+            .row {
+                .event-info {
+                    .event-details {
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// up to medium screens
+@media (max-width: 768px) {
+    #prev-events {
+        .events {
+            grid-row-gap: 20px;
+        }
+    }
+}
+
+// DIMENSIONS
+// X-Small	            None <576px
+// Small	            sm	≥ 576px
+// Medium	            md	≥ 768px
+// Large	            lg	≥ 992px
+// Extra large	        xl	≥ 1200px
+// Extra extra large	xxl	≥ 1400px
