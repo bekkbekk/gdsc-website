@@ -18,7 +18,7 @@
         text-align: start;
         color: #4F4343;
         font-family: Product Sans;
-        font-size: 3.5em;
+        font-size: 4em;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -44,7 +44,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: Product Sans;
-        font-size: 2.5em;
+        font-size: 3em;
         font-style: normal;
         font-weight: 700;
     }
@@ -52,7 +52,7 @@
 
 @media screen and (max-width: 321px){
     .caption-1 {
-        font-size: 2.15em !important;
+        font-size: 2.5em !important;
         width: fit-content;
     }
     
@@ -61,16 +61,16 @@
     }
     
     .orgNameGradient{
-        font-size: 2.3em !important;
+        font-size: 2.7em !important;
         width: fit-content;
     }
     
     #sec2Title{
-        font-size: 1.25em !important;
+        font-size: 2em !important;
     }
     
     .desc {
-        font-size: 1em !important
+        font-size: 2em !important
     }
 }
 

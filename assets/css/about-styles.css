@@ -4,7 +4,7 @@ body{
 
 /* Navbar */
 
-
+/* 
 nav ul li{
     margin-left: 50px; 
 }
@@ -19,7 +19,7 @@ nav ul li button{
     height: 55px;
     border-radius: 36px !important;
     background: #4285F4;
-}
+} */
 
 /* Welcome */
 .welcome{
